@@ -4,7 +4,7 @@
 
 /* Base */
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -78,14 +78,17 @@ body {
     .navbar {
         padding: 0;
     }
+
     .navbar .logo {
         position: absolute;
         top: 20px;
         left: 5px;
     }
+
     .navbar .menu-hamburger {
         display: block;
     }
+
     .nav-links {
         top: 0;
         right: 0;
@@ -100,41 +103,49 @@ body {
         margin-right: 100%;
         transition: all 0.5s ease-in;
     }
+
     .nav-links a {
         color: #000;
     }
+
     .nav-links.mobile-menu {
         margin-right: 0;
     }
+
     .nav-links ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
-        opacity: 0; 
-        transition: opacity 0.5s ease; 
-        animation-duration: 0s; 
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        animation-duration: 0s;
         animation-name: none;
     }
+
     .nav-links ul.show li {
-        opacity: 1; 
-        animation-duration: 2.5s; 
+        opacity: 1;
+        animation-duration: 2.5s;
         animation-name: slidein;
     }
+
     @keyframes slidein {
         from {
             margin-left: 100%;
             width: 600%;
         }
+
         to {
             margin-left: 0%;
             width: 100%;
         }
     }
-/* DESACTIVATION DU BOUTON EN MODE NAVBAR*/
+
+    /* DESACTIVATION DU BOUTON EN MODE NAVBAR*/
     .sec1 .hidden {
         visibility: hidden;
     }
@@ -146,21 +157,21 @@ body {
     background-image: url(Image/dogde-4k.png);
     height: 100vh;
     width: 100%;
-    }
+}
 
 .sec1 .container {
-width: 1500px;
-height: 100%;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sec1 h1 {
-color: white;
-font-size: 8em;
-margin-bottom: 70px;
+    color: white;
+    font-size: 8em;
+    margin-bottom: 70px;
 }
 
 /* Boutton */
@@ -180,8 +191,8 @@ margin-bottom: 70px;
 }
 
 .sec1 button:hover {
-color: white;
-width: 280px;
+    color: white;
+    width: 280px;
 }
 
 .sec1 button::before {
@@ -191,28 +202,28 @@ width: 280px;
     width: 280px;
     border-radius: 50px;
     background-color: #31489f;
-    top:-2px;
+    top: -2px;
     left: -2px;
     transform: translate(-100%);
     transition: 0.3 s;
     z-index: -1;
 }
 
-.sec1 button:hover::before, 
-.sec3 button:hover::before, 
+.sec1 button:hover::before,
+.sec3 button:hover::before,
 .sec4 button:hover::before {
     transform: translate(0%);
 }
 
-.sec1 button i, 
+.sec1 button i,
 .sec3 button i,
-.sec4 button i  {
+.sec4 button i {
     transform: scale(0);
     margin: -10px;
     transition: 0.3s;
 }
 
-.sec1 button:hover i, 
+.sec1 button:hover i,
 .sec3 button:hover i,
 .sec4 button:hover i {
     transform: scale(1);
@@ -238,47 +249,50 @@ button:hover i:nth-child(2) {
 /* Responsive Sec1 */
 
 @media (max-width: 1500px) {
-.sec1 .container {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
+    .sec1 .container {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
     }
-.sec1 {
-    height: 100%;
-    padding-top: 250px;
-    padding-bottom: 100px;
-     }    
-.sec1 button, 
-.sec3 button, 
-.sec4 button {
-    height: 50px;
-    width: 175px;
+
+    .sec1 {
+        height: 100%;
+        padding-top: 250px;
+        padding-bottom: 100px;
     }
-.sec1 button {
-    margin-bottom: 150px;
+
+    .sec1 button,
+    .sec3 button,
+    .sec4 button {
+        height: 50px;
+        width: 175px;
     }
-}  
-    
+
+    .sec1 button {
+        margin-bottom: 150px;
+    }
+}
+
 @media (max-width: 950px) {
     .sec1 h1 {
-    font-size: 6em;
-    margin-bottom: 60px;
+        font-size: 6em;
+        margin-bottom: 60px;
     }
 }
 
 @media (max-width: 700px) {
     .sec1 h1 {
-    font-size: 4em;
+        font-size: 4em;
     }
 }
 
 @media (max-width: 500px) {
     .sec1 h1 {
-    font-size: 3em;
+        font-size: 3em;
     }
 }
 
-/* SECTION 2 */ 
+/* SECTION 2 */
 
 .sec2 {
     position: relative;
@@ -296,7 +310,7 @@ button:hover i:nth-child(2) {
 
 }
 
-.sec2 .title  {
+.sec2 .title {
     position: relative;
     width: 100%;
     text-align: center;
@@ -305,7 +319,7 @@ button:hover i:nth-child(2) {
     margin-bottom: 100px;
 }
 
-.sec2 .title::before  {
+.sec2 .title::before {
     content: "";
     position: absolute;
     height: 30px;
@@ -350,7 +364,6 @@ button:hover i:nth-child(2) {
 
 .sec2 p {
     max-width: 500px;
-    line-break: anywhere;
 }
 
 .sec2 .content {
@@ -365,63 +378,76 @@ button:hover i:nth-child(2) {
 /* Responsive Sec2 */
 
 @media (min-width: 1500px) {
-.content-top .left {
-    max-width: 700px
-}
-.content-bottom .right {
-    max-width: 700px
-}
+    .content-top .left {
+        max-width: 700px
+    }
+
+    .content-bottom .right {
+        max-width: 700px
+    }
 }
 
 @media (max-width: 1500px) {
     .sec2 .content {
         margin: 50px 0;
     }
-    .sec2 .content img{
+
+    .sec2 .content img {
         width: 80%;
     }
+
     .sec2 .content-top {
         flex-direction: column;
     }
+
     .sec2 .content-bottom {
         flex-direction: column-reverse;
     }
+
     .sec2 .container {
         width: 100%;
         text-align: center;
     }
+
     .sec2 p {
         max-width: 900px;
         margin: 0 50px;
     }
+
     .sec2 .content-top .left {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-bottom: 50px;
     }
+
     .sec2 .content-bottom .right {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-bottom: 50px;
     }
+
     .sec2 .separateur {
         border-radius: 50px;
     }
+
     .sec2 .titre {
         justify-content: center;
         flex-direction: column;
     }
+
     .sec2 .point {
         margin-top: -50px;
         margin-right: 0px;
     }
-    .sec2 .title  {
+
+    .sec2 .title {
         margin-top: -25px;
         font-size: 2.3em;
     }
-    .sec2 .title::before  {
+
+    .sec2 .title::before {
         height: 25px;
         width: 175px;
     }
@@ -439,7 +465,7 @@ button:hover i:nth-child(2) {
     background-size: cover;
     display: flex;
     align-items: center;
-    filter: drop-shadow(5px 5px 10px #000 );
+    filter: drop-shadow(5px 5px 10px #000);
 }
 
 .sec3 .container {
@@ -467,7 +493,6 @@ button:hover i:nth-child(2) {
 .sec3 p {
     color: white;
     max-width: 517px;
-    line-break: anywhere;
     margin-bottom: 50px;
 }
 
@@ -477,7 +502,7 @@ button:hover i:nth-child(2) {
 
 /* Boutton */
 
-.sec3 button, 
+.sec3 button,
 .sec4 button {
     position: relative;
     height: 60px;
@@ -492,13 +517,13 @@ button:hover i:nth-child(2) {
     overflow: hidden;
 }
 
-.sec3 button:hover, 
+.sec3 button:hover,
 .sec4 button:hover {
-color: #31489f;
-width: 280px;
-} 
+    color: #31489f;
+    width: 280px;
+}
 
-.sec3 button::before, 
+.sec3 button::before,
 .sec4 button::before {
     content: "";
     position: absolute;
@@ -506,7 +531,7 @@ width: 280px;
     width: 280px;
     border-radius: 50px;
     background-color: white;
-    top:-2px;
+    top: -2px;
     left: -2px;
     transform: translate(-100%);
     transition: 0.3s;
@@ -516,41 +541,47 @@ width: 280px;
 /* Responsive Sec3 */
 
 @media (max-width: 1500px) {
-.sec3 .right {
-    max-width: 450px;
-    text-align: center;
+    .sec3 .right {
+        max-width: 450px;
+        text-align: center;
     }
 }
 
 @media (max-width: 1050px) {
-.sec3 .container {
-    flex-direction: column;
-    align-items: center;
+    .sec3 .container {
+        flex-direction: column;
+        align-items: center;
     }
-.sec3 .left {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    .sec3 .left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-.sec3 .separateur {
-    border-radius: 50px;
+
+    .sec3 .separateur {
+        border-radius: 50px;
     }
-.sec3 p {
-    margin: 0 20px;
-    }  
-.sec3 button {
-    margin: 50px 20px;
+
+    .sec3 p {
+        margin: 0 20px;
     }
-.sec3 .right img {
-    width: 80%;
+
+    .sec3 button {
+        margin: 50px 20px;
     }
-.sec3 h1 {
-    font-size: 3em;
- }
+
+    .sec3 .right img {
+        width: 80%;
+    }
+
+    .sec3 h1 {
+        font-size: 3em;
+    }
 }
 
-/* Section 4 */ 
+/* Section 4 */
 
 .sec4 {
     position: relative;
@@ -603,52 +634,61 @@ width: 280px;
 /* Responsive Sec4 */
 
 @media (max-width: 1600px) {
-.sec4 .right {
+    .sec4 .right {
         display: none;
     }
 }
 
 @media (max-width: 1250px) {
-.sec4 {
-    filter: none;
+    .sec4 {
+        filter: none;
     }
-.sec4 .content {
-    flex-direction: column-reverse;
-    justify-content: center;
+
+    .sec4 .content {
+        flex-direction: column-reverse;
+        justify-content: center;
     }
-.sec4 .left {
-    margin: 0;
+
+    .sec4 .left {
+        margin: 0;
     }
-.sec4 .left img {
-    width: 350px;
+
+    .sec4 .left img {
+        width: 350px;
     }
-.sec4 .mid {
-    text-align: center;
-    margin-bottom: 30px;
-    width: 80%;
+
+    .sec4 .mid {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 80%;
     }
-.sec4 .mid p {
-    margin: 30px auto;
-    max-width: 550px;
-    line-break: anywhere;
+
+    .sec4 .mid p {
+        margin: 30px auto;
+        max-width: 550px;
     }
-.sec4 .mid h1,
-.sec4 .mid h2,
-.sec4 .mid p {
-    color: #66aefc;
+
+    .sec4 .mid h1,
+    .sec4 .mid h2,
+    .sec4 .mid p {
+        color: #66aefc;
     }
-.sec4 button {
-    border: 3px solid #66aefc;
-    color: #66aefc;
+
+    .sec4 button {
+        border: 3px solid #66aefc;
+        color: #66aefc;
     }
-.sec4 button:hover {
-    color: white;
+
+    .sec4 button:hover {
+        color: white;
     }
-.sec4 button::before {
-    background-color: #66aefc;
+
+    .sec4 button::before {
+        background-color: #66aefc;
     }
-.sec4 img {
-    filter: drop-shadow(0px 0px 4px #232323);
+
+    .sec4 img {
+        filter: drop-shadow(0px 0px 4px #232323);
     }
 }
 
